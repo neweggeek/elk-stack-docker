@@ -89,7 +89,7 @@ services:
       - elasticsearch
       - kibana
       - logstash
-#    __setup: filebeat setup -e -E output.logstash.enabled=false -E output.elasticsearch.hosts=['elasticsearch:9200'] -E setup.kibana.host=kibana:5601
+    __setup: filebeat setup -e -E output.logstash.enabled=false -E output.elasticsearch.hosts=['elasticsearch:9200'] -E setup.kibana.host=kibana:5601 -E setup.
 
 networks:
   elk_stack:
